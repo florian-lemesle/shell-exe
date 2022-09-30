@@ -1,7 +1,6 @@
 #!/bin/bash
 
-#récupérer prénom nom = user, mdp et role du fichier csv
-#si admin donner super user
+#J'ai du modifier common-password dans g pam pour réduire la taille minimum des password 
 
 userlist=$(cat /home/ubuntu/BashJob/JOB\ 9/Shell_Userlist.csv|awk 'NR>1'| awk 'BEGIN{ FS=" *,"; OFS="," } {$1=$1; print $0}')
 
