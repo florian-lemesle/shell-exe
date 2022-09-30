@@ -2,7 +2,7 @@
 
 #J'ai du modifier common-password dans g pam pour réduire la taille minimum des password 
 
-userlist=$(cat /home/ubuntu/BashJob/JOB\ 9/Shell_Userlist.csv|awk 'NR>1'| awk 'BEGIN{ FS=" *,"; OFS="," } {$1=$1; print $0}')
+userlist=$(cat /home/ubuntu/shell-exe/JOB\ 9/Shell_Userlist.csv|awk 'NR>1'| awk 'BEGIN{ FS=" *,"; OFS="," } {$1=$1; print $0}')
 
 
 for line in $userlist; do
